@@ -13,7 +13,7 @@ button.addEventListener('click', (e) => {
 
 async function getCountryInfo() {
     const url =
-        "https://restcountries.com/v3.1/name/italy";
+        `https://restcountries.com/v3.1/name/${input.value}`;
     try {
         const response = await fetch(url);
         if (!response.ok) {
